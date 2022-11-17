@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --p-b: hsl(225, 100%, 94%); /*Pale blue*/
+    --b-b: hsl(245, 75%, 52%); /*Bright blue*/
+    --v-p-b: hsl(225, 100%, 98%); /*Very pale blue*/
+    --des-b: hsl(224, 23%, 55%);  /*Desaturated blue*/
+    --d-b: hsl(223, 47%, 23%); /*Dark blue*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Red Hat Display;
+}
+body {
+    background-color: var(--p-b);
+}
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    min-height: 600px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 20px;
+}
+.container__ilustrattion {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    border-radius:20px 20px 0 0;
+}
+
+.container__title {
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--d-b);
+}
+
+.container__paragraph {
+    color: var(--des-b);
+    text-align: center;
+    font-size: 16px;
+    padding: 0 25px;
+    line-height: 1.8;
+    margin-bottom:20px;
+}
+
+.plan {
+    display:block;
+    background-color: var(--v-p-b);
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.plan__icon {
+    display: inline;
+    width: 100%;
+    max-width: 60px;
+    margin:15px
+}
+
+.plan__text {
+    display: inline;
+    font-weight: 900;
+    position:absolute;
+    margin:25px 5px 0;
+}
+.plan__price {
+    display: inline;
+    position:absolute;
+    margin:47px 5px 0;
+    font-size: 15px;
+    color: var(--des-b);
+}
+.plan__change{
+    display: inline;
+    position:absolute;
+    margin-top: 35px;
+    margin-left: 110px;
+}
+
+
+.pay {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px;
+    color:#fff;
+    background-color: var(--b-b);
+    height: 50px;
+    box-shadow: 2px 5px 50px -12px var(--b-b);
+}
+
+.cancel {
+    display: block;
+    text-align: center;
+    margin-top:30px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--des-b);
+}
+
+@media(min-width:1024px) {
+
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+    .container {
+        max-width: 650px;
+        min-height: 1080px;
+    }
+    .container__title {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    .container__paragraph{
+        font-size: 25px;
+        padding:0 65px;
+        margin-top:15px;
+    }
+    .plan {
+        margin-top: 50px;
+        max-width: 550px;
+        min-height: 120px;
+    }
+    .plan__icon {
+        max-width: 90px;
+    }
+    .plan__text {
+        font-size: 30px;
+    }
+    .plan__price {
+        font-size: 25px;
+        margin-top:65px;
+    }
+    .plan__change {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-left: 280px;
+    }
+    .pay {
+        margin:50px;
+        height: 90px;
+        font-size: 30px;
+        padding: 25px;
+    }
+    .cancel {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+}
